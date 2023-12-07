@@ -172,3 +172,7 @@ hr{
 .btn-keliling:active{
     transform: scale(0.99);
 }
+span.rumusKeliling{
+    font-size: 14pt;
+    font-weight: bold;
+}
