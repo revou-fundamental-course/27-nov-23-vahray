@@ -1,13 +1,17 @@
 var specialKeys = new Array();
 specialKeys.push(8); //Backspace
-specialKeys.push(9); //Backspace
+specialKeys.push(9); //Tab
+specialKeys.push(13); //Enter
 const btnLuas = document.getElementById("btn-luas");
 const btnKeliling = document.getElementById("btn-keliling");
+let formatter = Intl.NumberFormat("id");
+
+
+
 
 function IsNumeric(e) {
     var keyCode = e.which ? e.which : e.keyCode
     var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
-    console.log(ret)
     return ret;
 }
 
@@ -19,10 +23,10 @@ function luas(e){
     }else {
         let alas = document.getElementById("alas").value;
         let tinggi = document.getElementById("tinggi").value;
-        const luas = alas*tinggi/2;
+        const luas = parseInt(alas)*parseInt(tinggi)/2;
         document.getElementById("rumusLuas").innerHTML = `L = 1/2 x a x t`
-        document.getElementById("hasil-luas").innerHTML = `L = 1/2 x ${alas} x ${tinggi}`
-        document.getElementById("hasil-luas2").innerHTML = `L = ${luas}` 
+        document.getElementById("hasil-luas").innerHTML = `L = 1/2 x ${formatter.format(alas)} x ${formatter.format(tinggi)}`
+        document.getElementById("hasil-luas2").innerHTML = `L = ${formatter.format(luas)}` 
     }
 }
 
@@ -45,8 +49,8 @@ function keliling(e){
     let ac = document.getElementById("ac").value;
     const keliling = parseInt(ab)+parseInt(bc)+parseInt(ac);
     document.getElementById("rumusKeliling").innerHTML = `Keliling = panjang AB + panjang BC + panjang AC`; 
-    document.getElementById("hasil-keliling").innerHTML = `Keliling = ${ab}+${bc}+${ac}`; 
-    document.getElementById("hasil-keliling2").innerHTML = `Keliling = ${keliling}`; 
+    document.getElementById("hasil-keliling").innerHTML = `Keliling = ${formatter.format(ab)} + ${formatter.format(bc)} + ${formatter.format(ac)}`; 
+    document.getElementById("hasil-keliling2").innerHTML = `Keliling = ${formatter.format(keliling)}`;
     }
 }
 
