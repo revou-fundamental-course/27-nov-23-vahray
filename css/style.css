@@ -1,0 +1,174 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+body{
+    padding-bottom: 100px;
+}
+.header{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.header h2{
+    margin-bottom: 20px;
+}
+/* 
+.header h3{
+    margin-top: 20px;
+    width: 100%;
+    color: #fff;
+    font-size: 20pt;
+    letter-spacing: 2px;
+    line-height: 35px;
+    background-color: #3379B7;
+} */
+
+.content-luas{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.content-luas h2{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #3379B7;
+    font-size: 25pt;
+}
+span.rumusLuas{
+    font-size: 14pt;
+    font-weight: bold;
+}
+.content-luas img{
+    margin-top: 30px;
+}
+hr{
+    margin-top: 25px;
+}
+.hitung-luas{
+    margin-top: 25px;
+}
+.judulHitungLuas{
+    font-weight: bold;
+    font-size: 25pt;
+    text-align: center;
+}
+.hitung-luas p{
+    text-align: center;
+}
+
+.tampilHasilLuas{
+    margin-top: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.luas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+}
+
+.luas input{
+    margin: 7px;
+    padding: 7px;
+    width: 500px;
+    height: 25px;
+}
+
+.btn-luas{
+    background-color: #3379B7;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+}
+.btn-luas:active{
+    transform: scale(0.99);
+}
+
+.btn-reset{
+    background-color: rgb(248, 248, 16);
+    font-weight: bold;
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+}
+
+.btn-reset:active{
+    transform: scale(0.99);
+}
+
+.content-keliling{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.content-keliling h2{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #3379B7;
+    font-size: 25pt;
+}
+
+.content-keliling img{
+    margin-top: 30px;
+}
+hr{
+    margin-top: 25px;
+}
+.hitung-keliling{
+    margin-top: 25px;
+}
+.hitung-keliling p{
+    font-weight: bold;
+    font-size: 25pt;
+    text-align: center;
+}
+
+.keliling{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+}
+
+.keliling input{
+    margin: 7px;
+    padding: 7px;
+    width: 500px;
+    height: 25px;
+}
+
+.btn-keliling{
+    background-color: #3379B7;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+}
+.btn-keliling:active{
+    transform: scale(0.99);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI PROJECT REVOU | KALKULATOR LUAS & KELILING SEGITIGA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to Katik</h1>
+        <p>Hai, sobat selamat datang di Katik 😄</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling segitiga</p>
+    </div>
+    <div class="content-luas">
+        <h2>Luas Segitiga</h2>
+        <img src="segitiga.png" width="350px" alt="segitiga">
+        <p>Rumus Luas Segitiga yaitu: <span class="rumusLuas">L = 1/2 x a x t </span> </p>
+        <p style="margin-top: 10px;">Dimana: L = Luas, a = Alas, t = Tinggi</p>
+    </div>
+    <hr>
+    <div class="hitung-luas">
+        <p class="judulHitungLuas">Hitung Luas Segitiga</p>
+        <form onsubmit="luas(event)">
+            <div class="luas">
+                <input type="text" placeholder="ALAS SEGITIGA" autocomplete="off" id="alas"
+                    onkeypress="return IsNumeric(event)" required>
+                <input type="text" placeholder="TINGGI SEGITIGA" autocomplete="off" id="tinggi"
+                    onkeypress="return IsNumeric(event)" required>
+                <div>
+                    <button class="btn-luas" id="btn-luas" type="submit">Hitung</button>
+                    <button type="reset" class="btn-reset" onclick="hapusLuas()">Reset</button>
+                </div>
+            </div>
+        </form>
+        <div class="tampilHasilLuas">
+            <p id="rumusLuas"></p>
+            <p id="hasil-luas"></p>
+            <p id="hasil-luas2"></p>
+        </div>
+    </div>
+    <div class="content-keliling">
+        <h2>Keliling Segitiga</h2>
+        <img src="segitiga.png" width="350px" alt="segitiga">
+        <p>Rumus Keliling Segitiga yaitu: Keliling = panjang AB + panjang BC + panjang AC</p>
+    </div>
+    <hr>
+    <div class="hitung-keliling">
+        <p>Hitung Keliling Segitiga</p>
+        <form onsubmit="keliling(event)">
+            <div class="keliling">
+                <input type="number" placeholder="PANJANG AB" autocomplete="off" onkeydown="return IsNumeric(event)"
+                    id="ab" required>
+                <input type="number" placeholder="PANJANG BC" autocomplete="off" onkeydown="return IsNumeric(event)"
+                    id="bc" required>
+                <input type="number" placeholder="PANJANG AC" autocomplete="off" onkeydown="return IsNumeric(event)"
+                    id="ac" required>
+                <div>
+                    <button class="btn-keliling" id="btn-keliling" type="submit">Hitung</button>
+                    <button type="reset" class="btn-reset" onclick="hapusKeliling()">Reset</button>
+                </div>
+                <div class="tampilHasilKeliling">
+                    <p id="rumusKeliling"></p>
+                    <p id="hasil-keliling"></p>
+                    <p id="hasil-keliling2"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
